@@ -9,3 +9,15 @@ for num in new_tuple:
     if num > 3:
         break
     print(num)
+
+
+# Declare a dictionary of a shopping list with 3 items, find what type of data it is
+shopping_dict = {"apple": 0.5, "banana": 0.75, "bread": 1}
+print(type(shopping_dict))
+
+# find price for one item
+print(shopping_dict["bread"])
+
+# replace price for one of the items
+shopping_dict["bread"] = 2
+print(shopping_dict["bread"])
