@@ -40,3 +40,16 @@ class Person:
 new_person = Person("Leo", 21)
 print(new_person.name)
 print(new_person.age)
+
+
+# Create a class called student that inherits from person with student_id and course
+
+class Student(Person):
+    def __init__(self, name, age, student_id, course):
+        super().__init__(name, age)
+
+        self.student_id = student_id
+        self.course = course
+
+new_student = Student("Leo", 21, 123, "DevOps")
+print(new_student.name)
