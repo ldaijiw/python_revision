@@ -43,7 +43,6 @@ print(new_person.age)
 
 
 # Create a class called student that inherits from person with student_id and course
-
 class Student(Person):
     def __init__(self, name, age, student_id, course):
         super().__init__(name, age)
@@ -53,3 +52,37 @@ class Student(Person):
 
 new_student = Student("Leo", 21, 123, "DevOps")
 print(new_student.name)
+
+
+# Create dictionary with 4 items with prices
+shopping_dict2 = {"chicken": 3, "pasta": 1, "rice": 2, "eggs": 1}
+
+# Find total cost
+print(sum(shopping_dict2.values()))
+
+
+# Create function find total cost of dictionary values
+
+def added_dict(dict_arg):
+    return sum(dict_arg.values())
+
+print(added_dict(shopping_dict2))
+
+# Super() refers to the parent class, allowing to specifically call methods from the parent class that may have been overwritten
+
+# Add an item in location 3, can not be done as dictionaries are indexed by keys (unordered)
+shopping_dict2["juice"] = 2
+print(shopping_dict2)
+
+
+
+
+# create a list with same items as before
+shopping_list = ["chicken", "pasta", "rice", "eggs"]
+print(shopping_list)
+
+# iterate through list, if rice is found within list, break
+for item in shopping_list:
+    if item == "rice":
+        break
+    print(item)
